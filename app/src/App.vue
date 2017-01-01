@@ -1,8 +1,12 @@
 <style>
+ html,body {
+   background-color: white;
+   font-size: 1em;
+ }
 </style>
 
 <template>
-  <div class="container-fluid">
+  <div>
     <router-view></router-view>
   </div>
 </template>

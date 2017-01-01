@@ -1,9 +1,35 @@
 <template>
-  <div class="row top-bar">
-    <div class="col-md-12">
-      <i class="fa fa-bars"></i>
+  <div id="top-bar" class="columns is-mobile">
+
+    <div class="column is-narrow">
+      <button class="button is-white">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+      <button class="button is-white">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+      <button class="button is-white">
+        <i class="fa fa-refresh"></i>
+      </button>
+    </div>
+
+    <div class="column">
+      <span class="control">
+        <input class="input" name="" type="text" value=""/>
+      </span>
+
+    </div>
+
+    <div class="column is-narrow">
+      <button class="button is-white">
+        <i class="fa fa-cog"></i>
+      </button>
+
     </div>
   </div>
+
+
+
 </template>
 
 <script>
@@ -11,10 +37,9 @@
 </script>
 
 <style scoped>
- .top-bar {
-   font-size: 1.2em;
- }
- input {
-   width: 100%;
+ #top-bar {
+   padding-top: 8px;
+   padding-left: 4px;
+   padding-right: 4px;
  }
 </style>
