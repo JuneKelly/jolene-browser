@@ -1,5 +1,5 @@
 <template>
-  <div id="top-bar" class="columns is-mobile">
+  <div id="top-bar" class="columns is-mobile is-gapless">
 
     <div class="column is-narrow">
       <button class="button is-white">
@@ -14,17 +14,15 @@
     </div>
 
     <div class="column">
-      <span class="control">
+      <span id="url-bar-wrapper" class="control">
         <input class="input" name="" type="text" value=""/>
       </span>
-
     </div>
 
     <div class="column is-narrow">
       <button class="button is-white">
         <i class="fa fa-cog"></i>
       </button>
-
     </div>
   </div>
 
@@ -38,7 +36,7 @@
 
 <style scoped>
  #top-bar {
-   padding-top: 8px;
+   padding: 8px;
    padding-left: 4px;
    padding-right: 4px;
    border-bottom: 1px solid #ddd;
