@@ -41,5 +41,6 @@
    padding-top: 8px;
    padding-left: 4px;
    padding-right: 4px;
+   border-bottom: 1px solid #ddd;
  }
 </style>
