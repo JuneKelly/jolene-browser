@@ -5,7 +5,7 @@
 
         <iframe frameborder="0"
                 name="renderedPage"
-                :srcdoc="page"
+                :srcdoc="defaultPage"
                 sandbox>
         </iframe>
 
@@ -15,22 +15,22 @@
 </template>
 
 <script>
- import * as Parser from '../parser.js';
- export default {
-   computed: {
-     page() {
-       return '<style>body{font-family:sans-serif;}</style>\n\n' + this.testPage;
-     }
-   },
-   data: () => {
-     return {
-       testPage: Parser.parsePage('# Jolene\n\nTest')
-     }
-   }
- }
+  import * as Parser from '../parser.js';
+  export default {
+    computed: {
+      defaultPage() {
+        return this.$store.getters.defaultPageStyle
+        + Parser.parsePage(this.$store.getters.defaultPageSrc);
+      }
+    }
+  }
 </script>
 
 <style scoped>
- #page {
+ iframe {
+   width: 100%;
+   height: 100%;
+   min-height: 600px;
+   overflow: scroll;
  }
 </style>
