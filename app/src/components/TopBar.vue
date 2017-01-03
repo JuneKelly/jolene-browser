@@ -1,7 +1,7 @@
 <template>
   <div id="top-bar" class="columns is-mobile is-gapless">
 
-    <div class="column is-narrow">
+    <div id="nav-buttons-wrapper" class="column is-narrow">
       <button class="button is-white">
         <i class="fa fa-chevron-left"></i>
       </button>
@@ -43,6 +43,9 @@
    padding-left: 4px;
    padding-right: 4px;
    border-bottom: 1px solid #ddd;
+ }
+ #nav-buttons-wrapper {
+   padding-right: 4px;
  }
  #url-bar-wrapper {
    padding-right: 4px;
