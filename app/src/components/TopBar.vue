@@ -18,7 +18,8 @@
 
     <div class="column">
       <span id="url-bar-wrapper" class="control has-addons">
-        <input class="input is-expanded" name="" type="text" value=""/>
+        <input class="input is-expanded" name="" type="text" value=""
+               @keyup.enter="go" />
         <button class="button"
                 @click="go">
           <i class="fa fa-arrow-right"></i>
