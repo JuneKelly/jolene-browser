@@ -3,10 +3,10 @@
 
     <div class="column is-narrow">
       <button class="button is-white">
-        <i class="fa fa-arrow-left"></i>
+        <i class="fa fa-chevron-left"></i>
       </button>
       <button class="button is-white">
-        <i class="fa fa-arrow-right"></i>
+        <i class="fa fa-chevron-right"></i>
       </button>
       <button class="button is-white">
         <i class="fa fa-refresh"></i>
@@ -14,8 +14,11 @@
     </div>
 
     <div class="column">
-      <span id="url-bar-wrapper" class="control">
-        <input class="input" name="" type="text" value=""/>
+      <span id="url-bar-wrapper" class="control has-addons">
+        <input class="input is-expanded" name="" type="text" value=""/>
+        <button class="button">
+          <i class="fa fa-arrow-right"></i>
+        </button>
       </span>
     </div>
 
@@ -40,5 +43,8 @@
    padding-left: 4px;
    padding-right: 4px;
    border-bottom: 1px solid #ddd;
+ }
+ #url-bar-wrapper {
+   padding-right: 4px;
  }
 </style>

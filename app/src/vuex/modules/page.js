@@ -16,15 +16,15 @@ const getters = {
 const mutations = {
   [types.PUSH_NEW_PAGE](state, page) {
     history.push(page);
-    currentPage = history.length-1;
+    state.currentPage = history.length-1;
   },
   [types.BACK_PAGE](state) {
-    if (currentPage > 0) {
+    if (state.currentPage > 0) {
       state.currentPage--;
     }
   },
   [types.FORWARD_PAGE](state) {
-    if (statecurrentPage < history.length-1) {
+    if (state.currentPage < history.length-1) {
       state.currentPage++;
     }
   }
@@ -32,5 +32,7 @@ const mutations = {
 
 
 export default {
-  state
+  state,
+  mutations,
+  getters
 };
