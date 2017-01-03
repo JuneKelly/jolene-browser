@@ -35,8 +35,6 @@
     </div>
   </div>
 
-
-
 </template>
 
 <script>
@@ -71,7 +69,7 @@
    padding: 8px;
    padding-left: 4px;
    padding-right: 4px;
-   border-bottom: 1px solid #ddd;
+   border-bottom: 1px solid #dbdbdb;
  }
  #nav-buttons-wrapper {
    padding-right: 4px;
