@@ -3,7 +3,7 @@ const defaultPageSrc = `
 
 ![jolene](static/Jolene_logo_head.png)
 
-Welcome to Jolene, the markdown browser
+Welcome to Jolene, the markdown browser.
 `.trim();
 
 const defaultPageStyle = `
