@@ -1,4 +1,6 @@
-export const DECREMENT_MAIN_COUNTER = 'DECREMENT_MAIN_COUNTER';
-export const INCREMENT_MAIN_COUNTER = 'INCREMENT_MAIN_COUNTER';
+// Mutation Types
 
-export const PUSH_NEW_PAGE = 'PUS_NEW_PAGE';
+
+// TABS
+export const PUSH_NEW_TAB = 'PUSH_NEW_TAB';
+export const REMOVE_TAB_AT_INDEX = 'REMOVE_TAB_AT_INDEX';

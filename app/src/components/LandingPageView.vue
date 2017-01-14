@@ -4,17 +4,17 @@
 <template>
   <div>
     <top-bar></top-bar>
-    <page></page>
+    <page-display></page-display>
   </div>
 </template>
 
 <script>
   import TopBar from './TopBar.vue'
-  import Page from './Page.vue'
+  import PageDisplay from './PageDisplay.vue'
   export default {
     components: {
       TopBar,
-      Page
+      PageDisplay
     },
     name: 'landing-page'
   };
