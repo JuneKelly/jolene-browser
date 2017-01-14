@@ -28,9 +28,19 @@ const getters = {
 const mutations = {
   [types.PUSH_NEW_TAB](state, {tab}) {
     state.tabs.push(tab);
+    if (state.tabs.length > 0) {
+      state.currentTab = state.tabs.length-1;
+    } else {
+      state.currentTab = null;
+    }
   },
   [types.REMOVE_TAB_AT_INDEX](state, {tabIndex}) {
     state.tabs = R.remove(tabIndex, 1, state.tabs);
+    if (state.tabs.length > 0) {
+      state.currentTab = state.tabs.length-1;
+    } else {
+      state.currentTab = null;
+    }
   }
 };
 
