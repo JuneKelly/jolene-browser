@@ -6,18 +6,13 @@
         <iframe frameborder="0"
                 name="renderedPage"
                 :srcdoc="currentTabSrc"
-                sandbox>
+                sandbox="allow-same-origin allow-scripts">
         </iframe>
 
       </div>
     </div>
   </div>
 </template>
-
-<script>
- import PageDisplay from './PageDisplay.js';
- export default PageDisplay;
-</script>
 
 <style scoped>
  page-wrapper {
@@ -30,3 +25,8 @@
    min-height: 600px;
  }
 </style>
+
+<script>
+ import PageDisplay from './PageDisplay.js';
+ export default PageDisplay;
+</script>

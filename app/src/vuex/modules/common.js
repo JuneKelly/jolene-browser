@@ -4,6 +4,8 @@ const defaultPageSrc = `
 ![jolene](static/Jolene_logo_head.png)
 
 Welcome to Jolene, the markdown browser.
+
+Test link: [here](http://google.com)
 `.trim();
 
 const defaultPageStyle = `
